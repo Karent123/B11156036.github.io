@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .news-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .news-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+        }
+        
+        .news-image {
+            flex-shrink: 0;
+            width: 150px;
+            height: 150px;
+            margin-right: 10px;
+        }
+        
+        .news-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        
+        .news-content {
+            margin-bottom: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav {
+            flex-grow: 1;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        nav ul li {
+            margin-left: 10px;
+        }
+        
+        nav ul li:first-child {
+            margin-left: 0;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .logo {
+            width: 70px;
+            height: 70px;
+            margin-right: 10px;
+        }
+        
+        .logo img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        
+        .red-background {
+            background-color: #6f263d;
+            background-size: 1000% 1500%;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+            .logo {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="隊徽.png" alt="Cleveland Cavaliers Logo">
+            </a>
+        </div>
+        <h1>Cleveland Cavaliers</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="red-background">Home</a></li>
+                <li><a href="Competition Data.html" class="red-background">Competition Data</a></li>
+                <li><a href="player-introduction.html" class="red-background">Player Introduction</a></li>
+                <li><a href="NBA Store.html" class="red-background">NBA Store</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="news-container">
+        <div class="news-item">
+            <img class="news-image" src="news 1.avif" alt="News Image">
+            <div>
+                <h2 class="news-title"><a href="https://www.nba.com/cavaliers/news/features-lamar-stevens-230613" target="_blank">Stevens' Season in Wine and Gold</a></h2>
+                <p class="news-content">After falling in five games to New York in their return to the Playoffs after a four-year absence, the Cavaliers suffered a frustrating end to a stellar season. And one player who probably shares that frustration as much as anyone is Lamar
+                    Stevens. </p>
+            </div>
+        </div>
+        <div class="news-item">
+            <img class="news-image" src="new 2.avif" alt="News Image">
+            <div>
+                <h2 class="news-title"><a href="https://www.nba.com/cavaliers/news/features-dean-wade-player-week-230612" target="_blank">Cavs Player Week: Dean Wade</a></h2>
+                <p class="news-content">This week, we've got a Dean Wade player week in addition to Lamar Stevens! Get all things Dean here all week.</p>
+            </div>
+        </div>
+        <div class="news-item">
+            <img class="news-image" src="new 3.avif" alt="News Image">
+            <div>
+                <h2 class="news-title"><a href="https://www.nba.com/cavaliers/news/features-player-week-lamar-stevens-230612" target="_blank">Cavs Player Week: Lamar Stevens</a></h2>
+                <p class="news-content">This week, we're focusing on the original JYD, Lamar Stevens! Follow along here for all things Lamar throughout the week.</p>
+            </div>
+        </div>
+        <div class="news-item">
+            <img class="news-image" src="new 4.avif" alt="News Image">
+            <div>
+                <h2 class="news-title"><a href="https://www.nba.com/cavaliers/news/features-cavs-hq-230612" target="_blank">CavsHQ - Talking with Coach Mike and JMike</a></h2>
+                <p class="news-content">Former Cavaliers coach Mike Fratello and play-by-play man John Michael join the hosts Tim Alcorn and Jim Chones about the NBA offseason and some new coaching hires around the league. </p>
+            </div>
+        </div>
+        <div class="news-item">
+            <img class="news-image" src="new 5.avif" alt="News Image">
+            <div>
+                <h2 class="news-title"><a href="https://www.nba.com/cavaliers/news/releases-hoops-after-dark-230608" target="_blank">City of Cleveland and Cleveland Cavaliers Partner to Host 2nd Annual Hoops After Dark League</a></h2>
+                <p class="news-content">Cleveland, OH – After a successful inaugural 2022 Hoops After Dark League, the City of Cleveland and the Cleveland Cavaliers will once again bring this impactful community event to Cleveland’s neighborhood recreation centers.</p>
+            </div>
+        </div>
+        <div class="news-item">
+            <img class="news-image" src="new 6.avif" alt="News Image">
+            <div>
+                <h2 class="news-title"><a href="https://www.nba.com/cavaliers/news/features-raul-neto-230608" target="_blank">Raul Running with the Cavs</a></h2>
+                <p class="news-content">Like his former teammate in Washington and fellow free agent signee last off-season, Robin Lopez, veteran point guard Raul Togni Neto was brought to Cleveland as an insurance policy. </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
