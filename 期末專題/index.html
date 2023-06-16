@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleveland Cavaliers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav {
+            flex-grow: 1;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        nav ul li {
+            margin-right: 10px;
+        }
+        
+        nav ul li:first-child {
+            margin-left: 0;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .logo {
+            width: 70px;
+            height: 70px;
+            margin-right: 10px;
+        }
+        
+        .logo img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            background-image: url("長方形首頁圖片.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .slideshow-container .slide {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        
+        .slideshow-container .slide.active {
+            display: block;
+            opacity: 1;
+        }
+        
+        .stats-container {
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        .game-score {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .red-background {
+            background-color: #6f263d;
+            background-size: 1000% 1500%;
+        }
+        
+        .small-image {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        
+        .small-image a {
+            margin-left: 5px;
+        }
+        
+        .small-image img {
+            width: 30px;
+            height: 30px;
+        }
+        /* 添加 RWD 媒體查詢 */
+        
+        @media only screen and (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+            .logo {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="隊徽.png" alt="Cleveland Cavaliers Logo">
+            </a>
+        </div>
+        <h1>Cleveland Cavaliers</h1>
+        <nav>
+            <ul>
+                <li><a href="NEWS.html" class="red-background">NEWS</a></li>
+                <li><a href="Competition Data.html" class="red-background">Competition Data</a></li>
+                <li><a href="player-introduction.html" class="red-background">Player Introduction</a></li>
+                <li><a href="NBA Store.html" class="red-background">NBA Store</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slideshow-container">
+        <div class="slide active"></div>
+    </div>
+    <div class="image-container">
+        <img src="長方形首頁圖片.jpg" alt="Slideshow Image" style="max-width: 100%;">
+    </div>
+
+    <h2>Cleveland Cavaliers Introduction</h2>
+    <p>The Cleveland Cavaliers are a professional basketball team based in Cleveland, Ohio. They are a member of the Central Division in the Eastern Conference of the National Basketball Association (NBA).</p>
+    <p>The Cavaliers were founded in 1970 and have won one NBA championship in 2016. They have had several successful seasons, including reaching the NBA Finals multiple times. The team has been home to many notable players, including LeBron James, Kyrie
+        Irving, and Kevin Love.</p>
+    <p>With a strong fan base and dedicated players, the Cleveland Cavaliers continue to compete at the highest level in the NBA and strive for future success.</p>
+
+    <div class="small-image">
+        <a href="https://www.facebook.com/Cavs/"><img src="facebook-circular-logo.png" alt="facebook"></a>
+        <a href="https://www.instagram.com/Cavs/"><img src="instagram.png" alt="instagram"></a>
+        <a href="https://twitter.com/Cavs/"><img src="twitter.png" alt="twitter"></a>
+        <a href="https://www.youtube.com/Cavs"><img src="youtube.png" alt="youtube"></a>
+    </div>
+</body>
+
+</html>
